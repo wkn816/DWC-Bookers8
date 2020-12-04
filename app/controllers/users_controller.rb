@@ -1,13 +1,14 @@
 class UsersController < ApplicationController
   before_action :ensure_correct_user, only: [:edit]
-  def create
-    if @user.save
-      NotificationMailer.send_confirm_to_user(@user).deliver_later
-      redirect_to @user
-    else
-      render 'new'
-    end
-  end
+  # byebug
+  # def create
+  #   if @user.save
+  #     NotificationMailer.send_confirm_to_user(@user).deliver_later
+  #     redirect_to @user
+  #   else
+  #     render 'new'
+  #   end
+  # end
 
 
   def show

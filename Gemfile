@@ -69,5 +69,7 @@ gem 'bootstrap', '~> 4.5'
 gem 'jquery-rails'
 gem 'font-awesome-sass', '~> 5.13'
 group :development do
-  gem "letter_opener"
+gem "letter_opener"
 end
+gem 'byebug'
+gem 'pry-rails'
